@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "xslt-js",
+			"label": "XSL_demo",
+			"xsltFile": "${workspaceFolder}/src/stylesheet.xsl",
+			"xmlSource": "${workspaceFolder}/Data/catalog.xml",
+			"resultPath": "${workspaceFolder}/xslt-out/result1.xml",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$saxon-xslt-js"
+			]
+		}
+	]
+}
